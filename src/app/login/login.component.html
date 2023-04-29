@@ -1,0 +1,24 @@
+<form #postForm="ngForm" class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Username</mat-label>
+    <input matInput placeholder="Username" name="username" ngModel required />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Password</mat-label>
+    <input
+      type="password"
+      matInput
+      placeholder="Password"
+      name="password"
+      ngModel
+      required
+    />
+  </mat-form-field>
+  <button
+    routerLink="/generate"
+    class="btn btn-lg btn-primary text-white"
+    type="submit"
+  >
+    Login
+  </button>
+</form>

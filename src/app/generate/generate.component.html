@@ -1,0 +1,56 @@
+
+<div class="bg">
+  <br/>
+
+  <form [formGroup]="inputForm" (ngSubmit)="onFormSubmit()" #postForm="ngForm" class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Card No</mat-label>
+      <input matInput placeholder="Card Number" name="" formControlName="cardNo" ngModel required />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>CVV</mat-label>
+      <input matInput placeholder="CVV" name="" formControlName="cvv" ngModel required />
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Month</mat-label>
+      <mat-select formControlName="month">
+        <mat-option>None</mat-option>
+        <mat-option value="01">01</mat-option>
+        <mat-option value="02">02</mat-option>
+        <mat-option value="03">03</mat-option>
+        <mat-option value="04">04</mat-option>
+        <mat-option value="05">05</mat-option>
+        <mat-option value="06">06</mat-option>
+        <mat-option value="07">07</mat-option>
+        <mat-option value="08">08</mat-option>
+        <mat-option value="09">09</mat-option>
+        <mat-option value="10">10</mat-option>
+        <mat-option value="11">11</mat-option>
+        <mat-option value="12">12</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Year</mat-label>
+      <mat-select formControlName="year">
+        <mat-option>None</mat-option>
+        <mat-option value="option 1">2025</mat-option>
+        <mat-option value="option 2">2026</mat-option>
+        <mat-option value="option 3">2027</mat-option>
+        <mat-option value="option 4">2028</mat-option>
+        <mat-option value="option 5">2029</mat-option>
+        <mat-option value="option 6">2030</mat-option>
+        <mat-option value="option 7">2031</mat-option>
+        <mat-option value="option 8">2032</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Available balance</mat-label>
+      <input matInput placeholder="Available Balance" name="avlBalance" formControlName="avlBalance" ngModel required />
+    </mat-form-field>
+    <button class="btn btn-primary text-white" type="submit">
+      Generate
+    </button>
+  </form>
+</div>

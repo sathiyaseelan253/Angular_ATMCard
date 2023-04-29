@@ -1,0 +1,28 @@
+.example-form {
+    min-width: 100px;
+    max-width: 200px;
+    width: 100%;
+    padding-top: 100px;
+    margin-left: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  p {
+    margin-left: 460px;
+  }
+  .btn {
+    width: 100px;
+  
+    margin-left: 48px;
+  }
+  

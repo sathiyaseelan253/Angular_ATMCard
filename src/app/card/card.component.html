@@ -1,0 +1,104 @@
+<body>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Kumbh+Sans&display=swap"
+    rel="stylesheet"
+  />
+
+  <div class="card-group">
+    <div class="card">
+      <div class="logo">
+        <img
+          src="https://raw.githubusercontent.com/dasShounak/freeUseImages/main/Visa-Logo-PNG-Image.png"
+          alt="Visa"
+        />
+      </div>
+      <div class="chip">
+        <img
+          src="https://raw.githubusercontent.com/dasShounak/freeUseImages/main/chip.png"
+          alt="chip"
+        />
+      </div>
+      <div class="master">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg"
+          alt=""
+          width="770"
+          height="70"
+        />
+      </div>
+      <div class="icic">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/1/12/ICICI_Bank_Logo.svg"
+          alt=""
+          width="200"
+          height="35"
+        />
+      </div>
+      <input type="text" name="" id="acno" />
+      <label id="val">VALID THRU</label>
+      <input type="text" name="" id="valid" />
+      <input type="text" name="" id="valid1" />
+    </div>
+  </div>
+
+  <div class="card-group1">
+    <div class="card1">
+      <div
+        id="blk"
+        style="background-color: #000000; height: 45px; width: 100%"
+      ></div>
+      <div class="qrt"><p>Scan QR for mobile app</p></div>
+      <div
+        id="blk1"
+        style="background-color: whitesmoke; height: 35px; width: 45%"
+      >
+        <input type="text" name="" id="cv" />
+      </div>
+
+      <div class="qr">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/QR_Code_Example.svg/1200px-QR_Code_Example.svg.png"
+          width="52"
+          height="45"
+        />
+      </div>
+      <div>
+        <p class="text">AUTHORIZED SIGNATURE</p>
+        <p class="text1">
+          Use of this card is subject to the Terms and Conditions.
+        </p>
+        <p class="text2">valid for payment in India.</p>
+        <p class="text3">Not valid for payment in Foreign Exchange in Nepal.</p>
+      </div>
+    </div>
+  </div>
+</body>
+<div id="sbt">
+  <button type="button" class="btn btn-lg btn-success" (click)="popup = true">
+    MAKE TRANSACTION
+  </button>
+</div>
+
+<!-- popup withdrawal -->
+
+<div class="overlay" *ngIf="popup">
+  <div class="popup">
+    <h2>Enter Withdrawal Amount</h2>
+    <a class="close" (click)="popup = false">&times;</a>
+    <div class="with">
+      <input type="text" name="" id="" />
+    </div>
+    <div class="pro">
+      <button type="button" class="btn btn-success">Proceed</button>
+    </div>
+  </div>
+</div>
